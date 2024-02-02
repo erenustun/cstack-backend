@@ -34,8 +34,16 @@ Clone the project, navigate into project directory & install dependencies:
   cp .env.example .env
 ```
 
+### Launch the docker container (PostgreSQL Server)
+This command runs the docker container.
+```bash
+npm run docker:start
+# or
+yarn docker:start
+```
+
 ### Launch the application in development mode
-This command runs the docker container and backend in that order. It won't affect the docker container in case it's already running.
+This command starts the nest.js application.
 ```bash
 npm run dev
 # or
@@ -44,6 +52,9 @@ yarn dev
 
 ### GraphQL Playground (API Documentation) - Explore and Learn
 ```bash
+# Insert the graphql url (e.g. http://localhost:4000/graphql) into the input field on the upper left on the page:
+https://studio.apollographql.com/sandbox/explorer
+# Alternative:
 http://localhost:4000/graphql
 ```
 
