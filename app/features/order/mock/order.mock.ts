@@ -1,0 +1,33 @@
+export const orderMock = [
+  {
+    id: 54781711,
+    pending: false,
+    total: 3597,
+    deliverTo: { id: 'ecf65695-92a0-4265-b071-a4e95a549a9a' },
+    invoice: { id: '2b87bee1-c379-40b6-9748-2ca23b290550' },
+    user: { id: 'f6eef4f4-d904-4b61-8012-2c7c2792c1bb' },
+    created: '2023-10-01 17:00:00-02',
+    cancelled: '2023-10-01 23:00:00-02',
+    shipped: null,
+  },
+  {
+    id: 85277684,
+    pending: false,
+    total: 2398,
+    deliverTo: { id: 'ecf65695-92a0-4265-b071-a4e95a549a9a' },
+    invoice: { id: 'b054abc1-6935-45b3-aee3-825177f06177' },
+    user: { id: 'f6eef4f4-d904-4b61-8012-2c7c2792c1bb' },
+    created: '2023-06-10 17:00:00-02',
+    shipped: '2023-06-12 08:00:00-02',
+  },
+  {
+    id: 15619282,
+    pending: true,
+    total: 1199,
+    deliverTo: { id: 'ecf65695-92a0-4265-b071-a4e95a549a9a' },
+    invoice: { id: '7565f1c5-c026-403a-9884-c19683f58a50' },
+    user: { id: 'f6eef4f4-d904-4b61-8012-2c7c2792c1bb' },
+    created: new Date(),
+    shipped: null,
+  },
+]

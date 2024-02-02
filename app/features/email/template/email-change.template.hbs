@@ -1,0 +1,58 @@
+<html lang='n'>
+<head>
+    <meta charset='utf-8'/>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+    <link
+            href='https://res.cloudinary.com/de6i7slmm/raw/upload/v1670895418/assets/styles/styles_ieklhs.css'
+            rel='stylesheet'
+    />
+    <link
+            href='https://res.cloudinary.com/de6i7slmm/raw/upload/v1670895418/assets/styles/fonts_k7we5o.css'
+            rel='stylesheet'
+    />
+    <title>Password reset request</title>
+</head>
+<body>
+<div class='relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12'>
+    <div class='relative bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10'>
+        <div class='mx-auto max-w-md'>
+            <img src='https://res.cloudinary.com/de6i7slmm/image/upload/v1689382284/assets/image/webstorehub/rnds5gve5u5wnvd1ilhx.png'
+                 class='h-6' alt='Tailwind Play' height='32px'/>
+            <div class='divide-y'>
+                <div class='space-y-6 py-8 leading-7'>
+                    <p class='divide-gray-300/50 text-xl font-semibold tracking-wide'>Hello {{name}},</p>
+                    <article class='space-y-3 text-slate-100'>
+                        <div>
+                            <p>You recently requested to change the email for your WebStoreHub account associated
+                                with {{email}}.</p>
+                            <p><a href='{{changeLink}}' class='text-sky-500 hover:text-sky-600'>Click here</a> to
+                                confirm.</p>
+                        </div>
+
+                        <div>
+                            <p>If you did not request an email change, please ignore this email or reply to let us
+                                know.</p>
+                            <p>This confirmation link is only valid for the next 30 minutes.</p>
+                        </div>
+
+                        <div>
+                            <p class='mb-2'>Have a great day!</p>
+                            <p>Yours,</p>
+                            <p>The WebStoreHub team</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class='pt-8 text-base font-semibold leading-7'>
+                    <p>
+                        <a href='{{website}}' class='font-normal text-sky-500 hover:text-sky-600'>&copy; WebStoreHub
+                            2023</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

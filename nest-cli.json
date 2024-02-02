@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "app",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "plugins": [
+      {
+        "name": "@nestjs/graphql",
+        "options": {
+          "typeFileNameSuffix": [
+            ".input.ts",
+            ".args.ts",
+            ".entity.ts",
+            ".model.ts",
+            ".result.ts",
+            ".mock.ts",
+            ".enum.ts"
+          ],
+          "introspectComments": true
+        }
+      }
+    ],
+    "assets": ["**/*.hbs", "**/*.graphql"]
+  }
+}
