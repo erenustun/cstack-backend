@@ -38,27 +38,27 @@ Clone the project, navigate into project directory & install dependencies:
 This command runs the docker container.
 ```bash
 npm run docker:start
-# or
-yarn docker:start
 ```
 
 ### Launch the application in development mode
 This command starts the nest.js application.
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
+---
+## 📙 Helpful
 ### GraphQL Playground (API Documentation) - Explore and Learn
 ```bash
-# Insert the graphql url (e.g. http://localhost:4000/graphql) into the input field on the upper left on the page:
+# Insert the graphql url (e.g. http://localhost:4000/graphql) into the input field on the upper left of this page:
 https://studio.apollographql.com/sandbox/explorer
-# Alternative:
+
+# Or use the integraded schema explorer (less features):
 http://localhost:4000/graphql
 ```
 
 ### Basic docker commands:
+#### Starting the Docker container:
 In the project's main folder, you'll find a docker-compose.yml file that outlines the setup for the backend services. To run the docker container in your local environment, simply navigate to the root directory of the project and execute the following command:
 ```bash
 docker compose up -d
@@ -70,6 +70,7 @@ To halt the container, simply execute:
 docker compose stop
 ```
 
+#### Deleting the Docker container:
 To delete the container, including its associated volumes, enter:
 ```bash
 docker compose down -v
